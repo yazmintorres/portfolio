@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div id="page-title">
+          <h1>Contact Me</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Dev Resources</a></li>
+            <!-- <li><a href="#">Project Ideas</a></li>
+            <li><a href="#">Friend Events</a></li> -->
+            <li><a href="#">Inspo</a></li>
+            <li><a href="contact.html" class="on">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <form action="#" method="post">
+          <!-- SECTION 1 -->
+          <div class="form-section">
+            <fieldset>
+              <legend class="title">Name</legend>
+              <div>
+                <label for="first_name" class="subtitle">First Name:</label
+                ><br />
+                <input type="text" id="first_name" name="first_name" required />
+              </div>
+              <div>
+                <label for="last_name" class="subtitle">Last Name:</label><br />
+                <input type="text" id="last_name" name="last_name" required />
+              </div>
+            </fieldset>
+          </div>
+          <!-- SECTION 2 -->
+          <div class="form-section">
+            <div>
+              <label for="contact_method" class="title"
+                >Method of Contact:</label
+              ><br />
+              <input
+                type="text"
+                id="contact_method"
+                name="contact_method"
+                placeholder="LinkedIn, Email, Cell..."
+                required
+              />
+            </div>
+          </div>
+          <!-- SECTION 3 -->
+          <div class="checks form-section">
+            <span class="title">Best Day(s) To Meet:</span><br />
+            <!-- MONDAY -->
+            <input type="checkbox" name="best_day" id="monday" value="monday" />
+            <label for="monday" class="subtitle">Mon</label>
+
+            <!-- TUESDAY -->
+            <input
+              type="checkbox"
+              name="best_day"
+              id="tuesday"
+              value="tuesday"
+            />
+
+            <label for="tuesday" class="subtitle">Tue</label>
+
+            <!-- WEDNESDAY -->
+            <input
+              type="checkbox"
+              name="best_day"
+              id="tuesday"
+              value="tuesday"
+            />
+
+            <label for="wednesday" class="subtitle">Wed</label>
+            <!-- THURSDAY -->
+            <input
+              type="checkbox"
+              name="best_day"
+              id="thursday"
+              value="thursday"
+            />
+
+            <label for="thursday" class="subtitle">Thur</label>
+            <!-- FRIDAY -->
+            <input type="checkbox" name="best_day" id="friday" value="friday" />
+            <label for="friday" class="subtitle">Fri</label>
+          </div>
+
+          <!-- SECTION 4 -->
+          <div class="form-section">
+            <label for="meeting_description" class="title"
+              >Reason for Meeting:</label
+            ><br />
+            <textarea
+              rows="3"
+              name="meeting_description"
+              id="meeting_description"
+            ></textarea>
+          </div>
+
+          <!-- SECTION 5 -->
+          <div class="form-section submit-section">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
