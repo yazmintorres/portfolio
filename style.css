@@ -52,8 +52,8 @@ img.small {
 }
 
 img.medium {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
 }
 
 img.large {
@@ -208,4 +208,27 @@ a.linkedin,
 a.youmove,
 a.github {
   color: #fff;
+}
+
+/* INSPO - QUOTES */
+.quotes-container {
+  width: 680px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+div.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #333;
+  background-image: url("images/quote-background.png");
+  background-position: center;
+}
+
+.quote a {
+  display: inline-block;
+  height: 200px;
 }
